@@ -8,46 +8,56 @@
 <!-- Bootstrap & CSS Links -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+
+ <!--fonts-->
+ <link rel="stylesheet" href="https://use.typekit.net/kmc8fuz.css">
+
+
 </head>
 
    
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation-bgcolor-change">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo404vibes.svg" width="120" height="38">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- custom-toggler.navbar-toggler changes aperance of the border -->
+            <span class="navbar-toggler-icon "></span>
+          </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav navbar-nav ml-auto font-weight-medium">
+              <li class="nav-item active">
+                <a class="nav-link font-color-change" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-itemp px-3">
+                <a class="nav-link ont-color-change" href="#">Artist</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Eventst</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Venues</a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Help</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">About</a>
+              </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-0 search-form" type="search" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit"><i class="bi bi-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></i></button>
+            </form>
+          </div>
       </nav>
 
 
