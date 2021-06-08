@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(to bottom right, rgba(65,38,55,100), rgba(34,29,46,100)); 
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    font-family: futura-pt, sans-serif;
+
+
+}
+
+.navigation-bgcolor-change{
+    background-color: #010817!important;
+    
+}
+
+
+/*changes the color of the toggler or burger button border */
+.custom-toggler.navbar-toggler {
+    border-color: #010817;
+  } 
+
+
+/* Change the color in the stroke property of the image data */
+.custom-toggler .navbar-toggler-icon {
+    border-color: #DCEAF4!important;
+    }
+
+.font-color-change{
+    color:#DCEAF4!important;
+    font-weight: 500;
+}
+
+
+.search-form {
+    border-radius: 30px 0px 0px 30px;
+    background-color: #DCEAF4
+}
+
+.search-btn {
+    border-radius: 0px 30px 30px 0px;
+    border-color:#DCEAF4!important;
+    cursor:pointer;
+    background-color: #DCEAF4
+}
