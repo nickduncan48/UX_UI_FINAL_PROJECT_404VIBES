@@ -42,3 +42,12 @@ body{
     cursor:pointer;
     background-color: #DCEAF4
 }
+
+.navbar-nav {
+    background-color: #010817
+}
+
+.navbar fixed-bottom navbar-expand-sm {
+    background-color: #010817
+
+}
