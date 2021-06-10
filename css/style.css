@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, rgba(65,38,55,100), rgba(34,29,46,100)); 
+    background-image: linear-gradient(to bottom right, rgba(46,22,39,100), rgba(24,17,39,100)); 
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -42,3 +42,222 @@ body{
     cursor:pointer;
     background-color: #DCEAF4
 }
+
+
+.section-heading{
+    color:#DCEAF4!important;
+    font-weight: 800;
+    font-size:20px;
+}
+
+/*carousel CSS*/
+
+.main{
+   width: 100%;
+   margin: 0;
+   padding: 5em;
+}
+
+
+  
+  .container-caroussel {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1400px;
+
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    
+  }
+  .carousel div {
+    transform-style: preserve-3d;
+    
+  }
+  
+  .item {
+    display: block;
+    position: absolute;
+    background: #010817;
+    width: 250px;
+    height: 270px;
+    padding: 10px;
+    text-align: left;
+    opacity: 0.95;
+    border-radius: 10px;
+    transition: transform 1s;
+    box-shadow:
+   
+    inset 0 0 50px #010817,      /* inner white */
+    inset 20px 0 80px rgb(20, 20, 36),   /* inner left magenta short */
+    inset -20px 0 80px rgb(20, 10, 48),  /* inner right cyan short */
+    inset 20px 0 100px rgb(37, 0, 37),  /* inner left magenta broad */
+    inset -20px 0 100px rgb(43, 14, 41), /* inner right cyan broad */
+    0 0 10px rgb(66, 24, 71),            /* outer white */
+    -10px 0 80px rgb(63, 0, 63),        /* outer left magenta */
+    10px 0 80px rgb(6, 55, 95);         /* outer right cyan */
+
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(500px);
+   
+  }
+  .a .item {
+    background: #17141D;
+  }
+  .b {
+    transform: rotateY(36deg) translateZ(500px)  rotateY(-36deg);
+  }
+  .b .item {
+    background: #17141D;
+  }
+  .c {
+    transform: rotateY(72deg) translateZ(500px) rotateY(-72deg);
+  } 
+  .c .item {
+    background: #17141D;
+  }
+
+  .d {
+    transform: rotateY(108deg) translateZ(500px) rotateY(-108deg);
+  } 
+  .d .item {
+    background: #17141D;
+  }
+  
+  .e {
+    transform: rotateY(144deg) translateZ(500px) rotateY(-144deg);
+  } 
+  .e .item {
+    background: #17141D;
+  }
+
+  .f {
+    transform: rotateY(180deg) translateZ(500px) rotateY(-180deg);
+  } 
+  .f .item {
+    background: #17141D;
+  }
+
+  .g {
+    transform: rotateY(216deg) translateZ(500px) rotateY(-216deg);
+  } 
+  .g .item {
+    background: #17141D;
+  }
+
+  .h {
+    transform: rotateY(252deg) translateZ(500px) rotateY(-252deg);
+  } 
+  .h .item {
+    background: #17141D;
+  }
+
+  .i {
+    transform: rotateY(288deg) translateZ(500px) rotateY(-288deg);
+  } 
+  .i .item {
+    background: #17141D;
+  }
+
+  .j {
+    transform: rotateY(324deg) translateZ(500px) rotateY(-324deg);
+  } 
+  .j .item {
+    background: #17141D;
+  }
+
+.blur-effect{
+  filter: blur(4px);
+  opacity: .3;
+}
+
+
+  .next, .prev {
+    color: #EB596E;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 100%;
+    vertical-align: middle;
+    top: 240px;
+    padding: .5em 1em;
+    cursor: pointer;
+    background: #DCEAF4;
+    border-radius: 40px;
+    opacity: 0.2;
+    box-shadow: 0 1px 0 rgb(0, 0, 0);
+    transition: box-shadow 0.1s, top 0.1s;
+   
+  }
+  .next:hover, .prev:hover {
+    color: #DCEAF4;
+    background-color: #EB596E;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: 0.9;
+   }
+  .next:active, .prev:active {
+    top: 244px;
+    box-shadow: 0 1px 0 rgb(14, 1, 13);
+  }
+  .next { right: 1.5em; }
+  .prev { left: 1.5em; }
+
+  /*Styling insede courusel cards*/
+
+  .top-10-image{
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .chart-position {
+    
+    font-family: eloquent-jf-pro, serif!important;
+    font-weight: 400!important;
+    color:#79c4ce;
+    padding-top:5px;
+    text-align: right;
+    font-size: 37px;
+    
+    
+  }
+
+.spot-text{
+  font-size: 19px;
+  opacity: .5;
+  color:#DCEAF4;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  color:thistle;
+vertical-align:top;
+font-style: italic;
+
+}
+  
+  .description-text-card{
+   color: #DCEAF4;
+  
+  }
+
+  .description-text-card-2{
+    color: #DCEAF4;
+    font-size: 11px;
+   
+   }
+  .by-tex{
+    font-size: 10px!important;
+    font-style: italic;
+    color:#DCEAF4;
+    opacity:.5;
+  }
