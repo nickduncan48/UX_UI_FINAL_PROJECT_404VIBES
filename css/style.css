@@ -46,8 +46,9 @@ body{
 
 .section-heading{
     color:#DCEAF4!important;
-    font-weight: 800;
-    font-size:25px;
+    font-weight: 500;
+    font-size:28px;
+    line-height: 2.5em;
 }
 
 /*carousel CSS*/
@@ -327,6 +328,15 @@ font-style: italic;
 
 .button-placement{
   padding-left: 5%;}
+
+
+
+/*cards styles*/
+
+.artist-card{
+  background-color: #010817;
+  color: #DCEAF4;
+}
 
 
 
