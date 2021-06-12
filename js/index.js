@@ -1,5 +1,5 @@
 
-var carousel = $(".carousel"),
+var carousel = $(".carousel-custom"),
     items = $(".item"),
     currentItem = 0,
     currdeg  = 0;
