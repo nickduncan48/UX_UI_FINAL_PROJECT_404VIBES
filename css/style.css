@@ -357,6 +357,10 @@ font-style: italic;
   color: #DCEAF4;
 }
 
+.card-title-custom{
+  font-weight: 500;
+  font-size: 16px;
+}
 .card-text-slight{
   font-size:14px;
   font-weight:lighter;
@@ -370,7 +374,8 @@ font-style: italic;
   font-size: 16px;
   text-align: right!important;
   color: #DCEAF4;
-  padding-top: 15px;
+  padding-top: 25px;
+  padding-bottom:45px;
 }
 
 .see-more-items-custom:hover{
@@ -381,6 +386,17 @@ font-style: italic;
   text-shadow: .5px 0px 0 #ffe227;
 
 
+}
+
+/*carousell events styles*/
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
   /*media queries*/
