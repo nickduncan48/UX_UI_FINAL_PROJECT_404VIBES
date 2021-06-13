@@ -297,7 +297,7 @@ body{
     color:#DCEAF4;
     padding-left: 5%;
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1.12em;
   }
 
@@ -519,3 +519,70 @@ audio {
 audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     margin: 0;
 }
+
+/*footer*/
+.custom-footer-vibes{
+  background-color: #010817!important;
+  color: #DCEAF4!important;
+
+}
+
+
+#breathing-image {
+
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+
+  
+  }
+
+
+@-webkit-keyframes breathing {
+0% {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.9);
+}
+}
+
+@keyframes breathing {
+0% {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+}
+}
+
+
