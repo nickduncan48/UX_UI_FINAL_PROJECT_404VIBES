@@ -46,8 +46,8 @@ body{
 
 .section-heading{
     color:#DCEAF4!important;
-    font-weight: 500;
-    font-size:28px;
+    font-weight: normal;
+    font-size:25px;
     line-height: 2.5em;
 }
 
@@ -235,7 +235,7 @@ body{
   }
 
 .spot-text{
-  font-size: 19px;
+  font-size: 17px;
   opacity: .5;
   color:#DCEAF4;
   font-family: futura-pt, sans-serif;
@@ -282,11 +282,22 @@ body{
 
   .super-heading{
     font-family: eloquent-jf-pro, serif!important;
-    font-weight: 600!important;
+    font-weight: 500!important;
     color:#DCEAF4;
     padding-left: 5%;
     text-align: left;
     font-size: 80px;
+    line-height: 1.12em;
+  }
+
+
+  .super-heading-medium{
+    font-family: eloquent-jf-pro, serif!important;
+    font-weight: 500!important;
+    color:#DCEAF4;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 50px;
     line-height: 1.12em;
   }
 
@@ -303,7 +314,8 @@ body{
     padding-left: 5%;
     color: #DCEAF4;
     font-weight: 500;
-    text-align: left;
+    letter-spacing: .05em;
+    text-align: left!important;
     font-family: futura-pt, sans-serif;
   }
 
@@ -341,7 +353,8 @@ body{
 }
 
 
-
+.button-placement-left{
+  padding-left: 0%;}
 
 
 .button-placement{
@@ -390,7 +403,7 @@ body{
 
 /*carousell events styles*/
 .carousel-item {
-  height: 100vh;
+  height: 50vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -487,4 +500,22 @@ body{
 
      }
  
-  
+  /*AUDIO PLAYER AUDIO PLAYER AUIDIO PLAYER AUDIO PLAYER*/
+
+  .container-audio {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    height: auto;
+    padding: 10px;
+    
+    background-color: #302A3E;
+    color: #EB596E;
+    overflow: hidden;
+}
+audio {
+  width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
