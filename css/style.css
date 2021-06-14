@@ -270,7 +270,7 @@ body{
 
 
   .bammer-image{
-    background-image: url(images/top-banner-vibes404.jpg);
+    background-image: url("../images/top-banner-vibes404.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
