@@ -586,3 +586,138 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 }
 
 
+/* AUDIO PLAYER STYLER */
+/* AUDIO PLAYER STYLES */
+
+.audio-player {
+	position: relative;
+	width: 100%;
+	height: 0;
+  top:70px;
+	text-align: center;
+	
+}
+
+.audio-player video {
+	opacity: 0;
+	transition: opacity 300ms;
+	will-change: opacity;
+}
+
+.audio-player:focus .audio-player__cover,
+.audio-player:hover .audio-player__cover,
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0.35;
+}
+
+.audio-player:focus .audio-player__title,
+.audio-player:hover .audio-player__title,
+.audio-player.is-playing .audio-player__title {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.audio-player:focus .audio-player__control-icon,
+.audio-player:hover .audio-player__control-icon,
+.audio-player.is-playing .audio-player__control-icon {
+	transform: scale(1.15);
+}
+
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0;
+}
+
+.audio-player.is-playing video {
+	opacity: 1;
+}
+
+.audio-player.is-playing .audio-player__control-icon:before {
+	transform: translateY(0);
+}
+
+.audio-player.is-playing .audio-player__control-icon:after {
+	transform: translateY(50px);
+}
+
+
+
+
+
+.audio-player__control {
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999999;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.audio-player__control:focus {
+	outline: none;
+}
+/* cicle outline aperace*/
+.audio-player__control-icon {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 3px solid rgb(220, 244, 234);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	transition: all 250ms ease-out;
+	transform: scale(1);
+	will-change: transform;
+}
+
+.audio-player__control-icon::after,
+.audio-player__control-icon::before {
+	transition: all 200ms;
+	will-change: transform;
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+/* triangle aperace*/
+.audio-player__control-icon::after {
+	left: 5px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid #DCEAF4;
+	transform: translateY(0);
+}
+
+.audio-player__control-icon::before {
+	width: 15px;
+	height: 30px;
+	border-right: 6px solid #DCEAF4;;
+	border-left: 6px solid #DCEAF4;;
+	transform: translateY(-50px);
+}
+
+.audio-players {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.audio-players li {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 300px;
+	margin: 0px;
+}
