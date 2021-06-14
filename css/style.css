@@ -539,7 +539,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 
 @-webkit-keyframes breathing {
 0% {
-  -webkit-transform: scale(0.99);
+  -webkit-transform: scale(0.98);
   transform: scale(0.99);
 }
 
@@ -554,14 +554,14 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 }
 
 100% {
-  -webkit-transform: scale(0.99);
+  -webkit-transform: scale(1);
   transform: scale(0.9);
 }
 }
 
 @keyframes breathing {
 0% {
-  -webkit-transform: scale(0.99);
+  -webkit-transform: scale(0.98);
   -ms-transform: scale(0.99);
   transform: scale(0.99);
 }
@@ -573,13 +573,13 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
 }
 
 60% {
-  -webkit-transform: scale(0.99);
+  -webkit-transform: scale(0.98);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
 100% {
-  -webkit-transform: scale(0.99);
+  -webkit-transform: scale(1);
   -ms-transform: scale(0.99);
   transform: scale(0.99);
 }
