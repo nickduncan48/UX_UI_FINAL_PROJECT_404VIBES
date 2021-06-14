@@ -1,154 +1,953 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Botstrap link-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Hotjar Tracking Code for https://nickduncan48.github.io/ux_ui_final_project_404vibes/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2450291,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
-    <title>UX/UI FINAL PROJECT 404VIBES</title>
-    <!-- Bootstrap & CSS Links -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/kmc8fuz.css" />
-  </head>
+  <!--Botstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <body>
-    <nav
-      class="
-        navbar navbar-expand-lg navbar-dark
-        bg-dark
-        navigation-bgcolor-change
-      "
-    >
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo404vibes.svg" width="120" height="38" />
-      </a>
-      <button
-        class="navbar-toggler custom-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <!-- custom-toggler.navbar-toggler changes aperance of the border -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <title>UX/UI FINAL PROJECT 404VIBES</title>
+  <!-- Bootstrap & CSS Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <!--fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/kmc8fuz.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/bhy7xqa.css">
+</head>
+
+<body>
+
+      <!--NAVIGATION-->
+      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark navigation-bgcolor-change">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo404vibes.svg" width="120" height="38" alt="404Vibes" id="breathing-image">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav navbar-nav ml-auto font-weight-medium">
-            <li class="nav-item active">
-              <a class="nav-link font-color-change" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-itemp px-3">
-              <a class="nav-link ont-color-change" href="#">Artist</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link ont-color-change" href="#">Eventst</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link ont-color-change" href="#">Venues</a>
-            </li>
 
-            <li class="nav-item px-3">
-              <a class="nav-link ont-color-change" href="#">Help</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link ont-color-change" href="#">About</a>
-            </li>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav navbar-nav ml-auto font-weight-medium">
+              <li class="nav-item active">
+                <a class="nav-link font-color-change" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-itemp px-3">
+                <a class="nav-link ont-color-change" href="#">Artist</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Eventst</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Venues</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">Help</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link ont-color-change" href="#">About</a>
+              </li>
+            </ul>
 
-          </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-0 search-form" type="search" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">
+                <i class="bi bi-search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </i>
+              </button>
+            </form>
+          </div>
+      </nav>
+      <!-- END NAVIGATION-->
 
 
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-0 search-form"
-            type="search"
-            placeholder="Search"
-          />
 
-          <button
-            class="btn btn-outline-success my-2 my-sm-0 search-btn"
-            type="submit"
-          >
-            <i class="bi bi-search">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </i>
-          </button>
-        </form>
-      </div>
-    </nav>
+                <!--Top Banner-->
 
-    <!-- Category Heading Row -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Top 10</h2>
+                  <div class="jumbotron bammer-image jumbotron rounded-0">
+                    <h3 class="dark-purple-heading">ENDLESS POSSIBILITIES</h3>
+                    <h1 class="super-heading">DISCOVER<br>NEW TALENT</h1>
+                    <h3 class="light-purple-heading">& GET FOUND</h3>
+                    <p
+                      class="light-paragraph">This is the open stage to discover inspiring artist, hire new talent,<br />or just to get
+                      that new tune you where looking for.
+                    </p>
+
+                    <span class="button-placement">
+                      <button
+                        type="button" class="btn btn-primary blue-btn" data-toggle="button" aria-pressed="false"
+                        autocomplete="off">Learn More
+                      </button>
+                    </span>
+                  </div>
+
+                <!--END Top Banner-->
+
+
+
+
+
+
+
+                <!-- Category Heading Row -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="section-heading">Top 10</h1>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+    <!--*************TOP 10 Carousel TOP 10 CAROUSEL TOP10 CAROUSEL******************-->
+        <div class="main">
+          <div class="container">
+
+            <div class="container-caroussel-custom ">
+              <div class="carousel-custom">
+                <div class="a">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-01-top10-230x120x2.jpg" width="230" height="120" >
+                    <h2 class="chart-position"><span class="spot-text">Spot</span>&nbsp;01</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+
+                <div class="b">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player--> 
+                    <img class="top-10-image" src="/images/Card-03-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;02</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="c">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-04-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;03</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="d">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-05-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;04</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="e">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-06-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;05</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="f">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-07-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;06</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="g">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-08-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;07</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="h">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-09-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;08</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="i">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-05-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;09</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+                <div class="j">
+                  <div class="item">
+                                <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+                    <img class="top-10-image" src="/images/Card-03-top10-230x120.jpg" width="230" height="120">
+                    <h2 class="chart-position"><span class="spot-text">SPOT</span>&nbsp;10</h2>
+                    <h6 class="description-text-card">Still Loving You</h6>
+                    <p class="fs-6 description-text-card-2"><span class="by-tex">by</span> Scorpions Cult</p>
+                  </div>
+                </div>
+
+
+              </div><!--CAURUSEL CUSTOM END-->
+            </div><!--CONTAINER CAROUSEL CUSTOM END-->
+
+          </div><!--CONTAINER END-->
+          <div class="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+          <div class="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+        </div> <!--MAIN END-->
+    <!--***********TOP 10 Carousel TOP 10 CAROUSEL TOP10 CAROUSEL END*************-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+   
+
+
+
+<!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION-->
+
+<div class="container px-4"><!--CONTAINER-->
+  <h2 class="section-heading">Random Playlist</h2>
+
+      <div class="row gx-5 gy-6"><!--ROW START-->
+
+        <div class="col col-sm-6 col-md-3"><!--COL1-->
+
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-down" data-aos-duration="250"><!--CARD1-->
+            <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/guitar.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Sound Playground</h5>
+              <p class="card-text card-text-slight">Acoustic</p>
+            </div>
+
+
+          </div><!--END CARD1-->
+          <script type="text/javascript" src="snow.js"></script>
+          <script type="text/javascript">
+            window.onload = function(){
+              snow.init(10);
+            };
+          </script>
+
+        </div><!--END COL1-->
+
+
+
+        <div class="col col-sm-6 col-md-3"><!--COL2-->
+
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-down" data-aos-duration="500"><!--CARD2-->
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/country.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Andrea & Mud</h5>
+              <p class="card-text card-text-slight">Country</p>
+            </div>
+          </div><!--END CARD2-->
+
+
+        </div><!--END COL2-->
+
+
+        <div class="col col-sm-6 col-md-3"><!--COL3-->
+
+
+        
+          <div class="card p-3 artist-card aos-item" data-aos="fade-down" data-aos-duration="1000"><!--CARD3-->
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/hotgirl.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Breanna Younger</h5>
+              <p class="card-text card-text-slight">Acoustic</p>
+            </div>
+          </div><!--END CARD3-->
+
+
+        </div><!--END COL3-->
+
+
+        <div class="col col-sm-6 col-md-3"><!--COL4-->
+
+
+            <div class="card p-3 artist-card aos-item" data-aos="fade-down" data-aos-duration="1500"><!--CARD4-->
+                          <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+              <img class="card-img-top" src="./images/girlwithguitar.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-title-custom">Leda</h5>
+                <p class="card-text card-text-slight">Soul/Funk</p>
+              </div>
+            </div><!--END CARD4-->
+
+
+        </div><!--END COL4-->
+
+
+        
+    </div><!--END ROW-->
+    <a href="#" class=" see-more-items-custom float-right">See More ›</a>
+</div> <!--END CONTAINER-->
+
+<!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION-->
+
+
+
+
+<br>
+<br>
+
+
+<!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION--><!--CARD SECTION-->
+
+ 
+
+
+
+
+
+
+    <div class="container  aos-item">
+      <h2 class="section-heading">New</h2>
+
+      <div class="row gx-5 gy-6">
+
+        <div class="col col-sm-6 col-md-3">
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="500">
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/kid.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Sound Playground</h5>
+              <p class="card-text card-text-slight">Acoustic</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-md-3">
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="1000">
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/ball.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Andrea & Mud</h5>
+              <p class="card-text card-text-slight">Country</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-md-3">
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="1500">
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/color.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Breanna Younger</h5>
+              <p class="card-text card-text-slight">Acoustic</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-md-3">
+
+          <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="2000">
+                        <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+            <img class="card-img-top" src="./images/yellow.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title card-title-custom">Leda</h5>
+              <p class="card-text card-text-slight">Soul/Funk</p>
+            </div>
+          </div>
         </div>
       </div>
+      <a href="#" class=" see-more-items-custom float-right">See More ›</a>
 
-      <!-- Footer -->
-      <footer>
-        <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li><a class="nav-link" href="#">Artists</a></li>
-            <li><a class="nav-link" href="#">Events</a></li>
-            <li><a class="nav-link" href="#">Help</a></li>
-            <li><a class="nav-link" href="#">Legal</a></li>
-            <li><a class="nav-link" href="#">Privacy</a></li>
-            <li><a class="nav-link" href="#">Sponsors</a></li>
-            <li><a class="nav-link" href="#">Venues</a></li>
-          </ul>
-        </nav>
-      </footer>
     </div>
 
-    <!-- JavaScript Ref Links -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <br/>
+      <br/>
+      <!--CARD ROW 3-->
+
+   
+
+
+
+      <div class="container px-4">
+        <h2 class="section-heading ">Because You Listened Rock...</h2>
+
+        <div class="row gx-5 gy-6">
+          <div class="col col-sm-6 col-md-3">
+            <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="500">
+                          <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+              <img class="card-img-top" src="./images/car.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-title-custom">Sound Playground</h5>
+                <p class="card-text card-text-slight">Acoustic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-sm-6 col-md-3">
+            <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="1000">
+                          <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+              <img class="card-img-top" src="./images/friends.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-title-custom">Sound Playground</h5>
+                <p class="card-text card-text-slight">Acoustic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-sm-6 col-md-3">
+            <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="1500">
+                          <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+              <img class="card-img-top" src="./images/jesus.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-title-custom">Sound Playground</h5>
+                <p class="card-text card-text-slight">Acoustic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-sm-6 col-md-3">
+            <div class="card p-3 artist-card aos-item" data-aos="fade-up" data-aos-duration="2000">
+                          <!--audio player audio player-->
+<!--audio player audio player-->
+
+<div class="audio-player js-audio-player"><button class="audio-player__control js-control"><div class="audio-player__control-icon"></div></button>
+<audio preload="auto"><source src="./tracks/Just Dance - Patrick Patrikios.mp3"/></audio>
+<video
+    preload="auto" loop="loop">
+    <source src="" type="video/mp4">
+    </video>
+</div>
+
+<!--audio player audio player-->
+<!--audio player audio player-->
+              <img class="card-img-top" src="./images/singer.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-title-custom">Sound Playground</h5>
+                <p class="card-text card-text-slight">Acoustic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="px-4 see-more-items-custom float-right">See More ›</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="section-heading ">Upcoming Events</h2>
+
+      </div>
+
+
+    
+     
+
+        <!--Careousel for featured events-->
+      
+
+        <div id="carouselExampleIndicators" class="carousel carousel-fade aos-item" data-aos="fade-up" data-aos-duration="1000" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('./images/event2-small.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="light-purple-heading">
+                  <img
+                  style="height:5em; width:.5em; bottom: .8em; position: relative; right: 0.5em;"
+                  src="./images/pinkcornerleft.svg">CONCERT<img 
+                  style="height:5em; width:.5em; top: .8em; position: relative; left: 0.5em;"
+                  src="./images/yellowcornerright.svg" height="15px">
+                </h4>
+                <h2 class="display-4 super-heading-medium">DIAMOND DAYS</h2>
+                <p
+                style="text-align: left; padding-left: 4em;"
+                class="light-paragraph">
+                <span style="color:#dceaf4">
+                  <sup>By</sup>
+                </span>
+                  <span
+                    style="font-size:22px; font-weight:bold;">
+                      ELEFANTE
+                      </span>
+                         <span>
+                           <br>Infinete Energy Center
+                              </span>
+                                   <br>
+                                   8PM | OCT12/2021
+               </p>
+
+                    <button
+                      type="button" class="btn btn-primary blue-btn" data-toggle="button" aria-pressed="false"
+                      autocomplete="off">Buy Tickets Now
+                    </button>
+                    <br>
+                    <br>
+                 
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('./images/event1-small.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="light-purple-heading">
+                  <img
+                  style="height:5em; width:.5em; bottom: .8em; position: relative; right: 0.5em;"
+                  src="./images/pinkcornerleft.svg">CONCERT<img 
+                  style="height:5em; width:.5em; top: .8em; position: relative; left: 0.5em;"
+                  src="./images/yellowcornerright.svg" height="15px">
+                </h4>
+                <h2 class="display-4 super-heading-medium">BLINKING SUN</h2>
+                <p
+                style="text-align: left; padding-left: 4em;"
+                class="light-paragraph">
+                <span style="color:#dceaf4">
+                  <sup>By</sup>
+                </span>
+                  <span
+                    style="font-size:22px; font-weight:bold;">
+                      Cassy Oliver
+                      </span>
+                         <span>
+                           <br>Coca-Cola-Roxy
+                              </span>
+                                   <br>
+                                   9:45PM | JUL6/2021
+               </p>
+
+                    <button
+                      type="button" class="btn btn-primary blue-btn" data-toggle="button" aria-pressed="false"
+                      autocomplete="off">Buy Tickets Now
+                    </button>
+                    <br>
+                    <br>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" id="event-slide3" style="background-image: url('./images/event3-small.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="light-purple-heading">
+                  <img
+                  style="height:5em; width:.5em; bottom: .8em; position: relative; right: 0.5em;"
+                  src="./images/pinkcornerleft.svg">CONCERT<img 
+                  style="height:5em; width:.5em; top: .8em; position: relative; left: 0.5em;"
+                  src="./images/yellowcornerright.svg" height="15px">
+                </h4>
+                <h2 class="display-4 super-heading-medium">Silent Call</h2>
+                <p
+                style="text-align: left; padding-left: 4em;"
+                class="light-paragraph">
+                <span style="color:#dceaf4">
+                  <sup>By</sup>
+                </span>
+                  <span
+                    style="font-size:22px; font-weight:bold;">
+                      Opyone
+                      </span>
+                         <span>
+                           <br>Terminal West
+                              </span>
+                                   <br>
+                                   9PM | SEP21/2021
+               </p>
+
+                    <button
+                      type="button" class="btn btn-primary blue-btn" data-toggle="button" aria-pressed="false"
+                      autocomplete="off">Buy Tickets Now
+                    </button>
+                    <br>
+                    <br>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon custom-indicator-events" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        
+
+<!--player player player  player  player  player  player  player  player  player  player  player  player -->
+<!--player player player  player  player  player  player  player  player  player  player  player  player -->
+
+
+
+<div class="container-audio">
+  <audio controls  loop autoplay>
+             <source src="./tracks/Warm Nights.mp3" type="audio/ogg">
+             Your browser dose not Support the audio Tag
+         </audio>
+</div>
+
+
+
+
+
+<!--player player player  player  player  player  player  player  player  player  player  player  player -->
+<!--player player player  player  player  player  player  player  player  player  player  player  player -->
+
+
+        <!-- Footer -->
+        <div>
+          <footer>
+            <nav class="navbar  navbar-expand-sm navbar-dark bg-dark custom-footer-vibes">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Artists</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <li><a class="nav-link" href="#">Help</a></li>
+                <li><a class="nav-link" href="#">Legal</a></li>
+                <li><a class="nav-link" href="#">Privacy</a></li>
+                <li><a class="nav-link" href="#">Sponsors</a></li>
+                <li><a class="nav-link" href="#">Venues</a></li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+</body>
+
+
+
+
+
+<!-- JavaScript Ref Links -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script src="./js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
 </html>
